@@ -1,0 +1,7 @@
+
+bbrb () {
+	brazil-package-cache stop
+	brazil ws --clean
+	brazil ws --sync --md
+	brazil-recursive-cmd --allPackages brazil-build-rainbow $argv
+}

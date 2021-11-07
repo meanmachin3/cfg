@@ -1,0 +1,4 @@
+# Find files in subdirectories
+fsub () {
+  find . -name "$1" -type f
+}

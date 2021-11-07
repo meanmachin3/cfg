@@ -1,0 +1,17 @@
+sshinit () {
+	if mwinit -o
+		for pid in (ps -ef | awk '/ssh-agent/ {print $2}'); do kill -9 $pid; done
+		eval (ssh-agent -c)
+		ssh-add -D
+		ssh-add
+		kdestroy -c (klist -l | grep -o '/tmp/.*')
+		set -g KRB5CCNAME FILE:/tmp/krb5cc_(id -u)
+		kinit -f
+		brazil-package-cache stop
+        	brazil-package-cache start
+	then
+		echo "Failed to authenticate"
+		exit 1
+	fi	
+}
+

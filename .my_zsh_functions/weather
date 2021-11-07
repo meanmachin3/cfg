@@ -1,0 +1,7 @@
+weather() {                                                                                                                                                              
+    if [ $# -eq 0 ]; then                                                                                                                                             
+        curl wttr.in/sea
+    else                                                                                                                                                              
+        curl wttr.in/$1                                                                                                                                                
+    fi                                                                                                                                                               
+} 
